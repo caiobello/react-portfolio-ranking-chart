@@ -1,13 +1,12 @@
 import React from "react";
 import { AdvancedChart } from "react-tradingview-embed";
 
+
+//https://www.tradingview.com/widget/advanced-chart/
 const TradingChart = () => {
   return (
     <div>
-      <h1>Trading Chart</h1>
-
       <AdvancedChart widgetProps={{
-
         "symbol": "BABYDOGEUSDT_BF7CD3",
         "interval": "D",
         "timezone": "Etc/UTC",
@@ -25,6 +24,7 @@ const TradingChart = () => {
         "locale": "br",
 
         "watchlist": [
+          "AMEX:SPY",
           "BINANCE:BTCUSDT",
           "CRYPTOCAP:TOTAL",
           "CRYPTOCAP:BTC.D",

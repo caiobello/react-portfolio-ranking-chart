@@ -1,38 +1,236 @@
+/* Common Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+input,
+select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+/* Table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* App */
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Center Container */
+.center-container {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  overflow-x: auto;
+  padding: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* App2 */
+.App2 {
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Ranking */
+.CryptoTableList {
+  margin-top: 1rem;
+}
+
+.CryptoItem {
+  font-size: 1rem;
+}
+
+/* Loading */
+.Loading {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+/* Media Queries */
+/* Tablets (landscape) and smaller */
+@media only screen and (max-width: 1024px) {
+  /* Common Styles */
+  label,
+  input,
+  select,
+  button,
+  th,
+  td,
+  footer {
+    font-size: 0.8rem;
+  }
+
+  /* Form */
+  form {
+    margin: 0.5rem;
+  }
+
+  /* Table */
+  table {
+    margin: 0.5rem;
+  }
+
+  /* Center Container */
+  .center-container {
+    padding: 0.5rem;
+  }
+
+  /* Ranking */
+  .CryptoItem {
+    font-size: 0.8rem;
+  }
+
+  /* Loading */
+  .Loading {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Smartphones */
+@media only screen and (max-width: 768px) {
+  /* Common Styles */
+  label,
+  input,
+  select,
+  button,
+  th,
+  td,
+  footer {
+    font-size: 0.7rem;
+  }
+
+  /* Header */
+  header {
+    padding: 0.3rem;
+  }
+
+  /* Form */
+  form {
+    margin: 0.3rem;
+  }
+
+  /* Table */
+  table {
+    margin: 0.3rem;
+  }
+
+  /* Center Container */
+  .center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centralize verticalmente */
+    min-height: 100vh; /* Mantenha o mínimo de altura para ocupar a tela inteira */
+  }
+  
+
+  /* App */
+  .App {
+    padding: 0.3rem;
+  }
+
+  /* App2 */
+  .App2 {
+    padding: 0.3rem;
+  }
+
+  /* Ranking */
+  .CryptoTableList {
+    margin-top: 0.3rem;
+  }
+
+  /* CryptoItem */
+  .CryptoItem {
+    font-size: 0.7rem;
+  }
+
+  /* Loading */
+  .Loading {
+    font-size: 0.7rem;
+    margin-top: 0.3rem;
+  }
+}
+
+.chart-container {
+  width: 100%;  
+  padding: 10px;
+  height: 100vh; /* Defina a altura desejada para o gráfico */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center; /* Centralizar horizontalmente */
+  align-items: center; /* Centralizar verticalmente */
 }
 
-.App-link {
-  color: #61dafb;
+/* Adicione um estilo específico para o gráfico */
+.chart-container .chart-component {
+  width: 100%;
+  max-width: 800px; /* Defina a largura máxima do gráfico, se necessário */
+  height: 100%; /* O gráfico ocupa a altura total */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

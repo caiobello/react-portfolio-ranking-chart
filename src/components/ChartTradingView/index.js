@@ -22,7 +22,8 @@ const TradingChart = () => {
         "calendar": true,
         "enable_publishing": false,
         "range": "YTD",
-        
+        "locale": "br",
+
         "watchlist": [
           "BINANCE:BTCUSDT",
           "CRYPTOCAP:TOTAL",

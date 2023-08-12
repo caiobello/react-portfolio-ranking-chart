@@ -7,6 +7,7 @@ const TradingChart = () => {
       <h1>Trading Chart</h1>
 
       <AdvancedChart widgetProps={{
+
         "symbol": "BABYDOGEUSDT_BF7CD3",
         "interval": "D",
         "timezone": "Etc/UTC",
@@ -20,7 +21,8 @@ const TradingChart = () => {
         "hotlist": true,
         "calendar": true,
         "enable_publishing": false,
-
+        "range": "YTD",
+        
         "watchlist": [
           "BINANCE:BTCUSDT",
           "CRYPTOCAP:TOTAL",

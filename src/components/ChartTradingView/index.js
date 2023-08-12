@@ -1,7 +1,8 @@
 import React from "react";
+//https://www.npmjs.com/package/react-tradingview-embed/v/3.0.6
 import { AdvancedChart } from "react-tradingview-embed";
 
-
+//https://k-128.github.io/react-tradingview-embed/?path=/story/widgets--advanced-chart-story
 //https://www.tradingview.com/widget/advanced-chart/
 const TradingChart = () => {
   return (
